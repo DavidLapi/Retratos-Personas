@@ -13,49 +13,27 @@ h1 {
     text-align: center;
 }
 
-/* Persona */
-.persona {
-    border: 1px solid black;
-    width: 50%;
-    height: 50vh;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -80%);
-}
-
-/* Moto y ciervo */
-.moto, .ciervo {
-    border: 1px solid black;
-    width: 150px;
-    height: 100px;
-}
-
-/* Moto */
-.moto {
-    position: absolute;
-    top: 65px;
-    left: 10px;
-    z-index: 1;
-}
-
-/* Ciervo */
-.ciervo {
-    position: absolute;
-    top: 65px;
-    right: 10px;
-    z-index: 1;
-} 
-
 /* Volver */
 .volver {
     position: relative;
-    top: 105px;
-    left: 290px;
+    bottom: 40px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
     width: 100px;
     height: 40px;
     border: 2px dashed rgb(20, 255, 125);
     background-color: rgb(30, 125, 200);
+    transition: 
+        width 1.5s, 
+        height 1.5s, 
+        rotate 1.5s;
+}
+
+.volver:hover {
+    width: 150px;
+    height: 60px;
+    rotate: 35deg;
 }
 
 .volver a {
