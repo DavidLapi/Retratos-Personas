@@ -1,0 +1,259 @@
+/* Cara */
+.cara-container {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-53%, -80%);
+}
+
+.cara {
+    width: 200px;
+    height: 220px;
+    background-color: rgb(253, 188, 180);
+    border-radius: 50% 50% 45% 45%;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+}
+
+/* Pelo trasero */
+.hair-back {
+    position: absolute;
+    width: 230px;
+    height: 240px;
+    top: 20px;
+    left: 40px;
+    background: radial-gradient(ellipse at 50% 30%, #8B4513 0%, #A0522D 30%, #CD853F 70%);
+    border-radius: 50% 50% 60% 40%;
+    transform: rotate(-3deg);
+    z-index: 0;
+}
+
+/* Pelo frontal */
+.hair-front {
+    position: absolute;
+    width: 170px;
+    height: 70px;
+    top: -20px;
+    left: 13px;
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%);
+    border-radius: 50% 50% 30% 30%;
+    z-index: 1;
+}
+
+/* Pestañas */
+.eyelashes {
+    position: absolute;
+    width: 32px;
+    height: 8px;
+    top: 48px;
+    z-index: 6;
+}
+
+.eyelashes.left { 
+    left: 59px; 
+}
+
+.eyelashes.right { 
+    right: 59px; 
+}
+
+.eyelash {
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: #2F1B14;
+    border-radius: 50%;
+}
+
+/* Pestañas izquierdas*/
+.eyelashes.left .eyelash:nth-child(1) { 
+    top: 5px;
+    left: 2px; 
+    transform: rotate(-20deg); 
+}
+
+.eyelashes.left .eyelash:nth-child(2) { 
+    top: 2px;
+    left: 8px; 
+    transform: rotate(-10deg); 
+}
+
+.eyelashes.left .eyelash:nth-child(3) { 
+    top: 0.5px;
+    left: 14px; 
+    transform: rotate(0deg); 
+}
+
+.eyelashes.left .eyelash:nth-child(4) { 
+    top: 0.5px;
+    left: 20px; 
+    transform: rotate(10deg); 
+}
+
+.eyelashes.left .eyelash:nth-child(5) { 
+    top: 3.5px;
+    left: 26px; 
+    transform: rotate(20deg); 
+}
+
+/* Pestañas derechas */
+.eyelashes.right .eyelash:nth-child(1) { 
+    top: 5px;
+    right: 2px; 
+    transform: rotate(20deg); 
+}
+
+.eyelashes.right .eyelash:nth-child(2) { 
+    top: 1px;
+    right: 8px; 
+    transform: rotate(10deg); 
+}
+
+.eyelashes.right .eyelash:nth-child(3) { 
+    top: 0.5px;
+    right: 14px; 
+    transform: rotate(0deg); 
+}
+
+.eyelashes.right .eyelash:nth-child(4) { 
+    top: 1px;
+    right: 20px; 
+    transform: rotate(-10deg); 
+}
+
+.eyelashes.right .eyelash:nth-child(5) { 
+    top: 4.5px;
+    right: 26px; 
+    transform: rotate(-20deg); 
+}
+
+
+/* Ojos */
+.ojo-humano {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    top: 55px;
+    border: 2px solid black;
+}
+
+.ojo-humano.izq {
+    left: 60px;
+}
+
+.ojo-humano.der {
+    right: 60px;
+}
+
+.iris {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #4169E1 30%, #1E90FF 70%);
+    border-radius: 50%;
+    top: 1.5px;
+    left: 2px;
+}
+
+.pupila {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+}
+
+.pupila::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+
+/* Nariz */
+.nariz-humano {
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    background: rgb(244, 126, 176);
+    top: 100px;
+    left: 92px;
+    border-radius: 50%;
+    box-shadow: -2px 0 3px rgba(0,0,0,0.1);
+}
+
+/* Boca */
+.boca-humano {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    border: 3px solid rgb(214, 48, 49);
+    border-top: none;
+    border-radius: 0 0 40px 40px;
+    top: 155px;
+    left: 82px;
+    background: rgb(255, 107, 122);
+    z-index: 5
+}
+
+.boca-humano::before {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    top: 0.5px;
+    left: 6px;
+}
+
+.boca-humano::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    top: 0.5px;
+    left: 20px;
+}
+
+/* Orejas */
+.oreja-humana {
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    background: rgb(253, 188, 180);
+    border-radius: 50%;
+    top: 40px;
+}
+
+.oreja-humana.izq {
+    left: -5px;
+}
+
+.oreja-humana.der {
+    right: -5px;
+}
+
+.oreja-inter {
+    position: absolute;
+    width: 15px;
+    height: 18px;
+    background: rgb(253, 128, 180);
+    border-radius: 50%;
+    top: 8px;
+    left: 7px;
+}

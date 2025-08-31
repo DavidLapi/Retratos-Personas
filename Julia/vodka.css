@@ -1,0 +1,165 @@
+/* Vodka */
+.vodka-container {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    z-index: 1;
+    transition: rotate 2s;
+}
+
+.vodka-container:hover {
+    rotate: 360deg;
+}
+
+.botella-cuerpo {
+    width: 40px;
+    height: 80px;
+    background: linear-gradient(135deg, 
+        rgba(255,255,255,0.1) 0%,
+        rgba(200,200,255,0.15) 25%,
+        rgba(255,255,255,0.05) 50%,
+        rgba(180,180,255,0.1) 75%,
+        rgba(255,255,255,0.08) 100%
+    );
+    border-radius: 8px 8px 25px 25px;
+    position: relative;
+    top: -50px;
+    left: 55px;
+    box-shadow: 
+        inset -8px 0 20px rgba(255,255,255,0.1),
+        inset 8px 0 20px rgba(0,0,0,0.1),
+        0 0 30px rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    overflow: hidden;
+}
+
+/* Líquido dentro de la botella */
+.vodka-liquido {
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    right: 2px;
+    height: 70px;
+    background: linear-gradient(180deg, 
+        rgba(240,248,255,0.8) 0%,
+        rgba(230,245,255,0.85) 50%,
+        rgba(220,240,255,0.9) 100%
+    );
+    border-radius: 6px 6px 23px 23px;
+}
+
+/* Cuello de la botella */
+.botella-cuello {
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 20px;
+    background: linear-gradient(135deg, 
+        rgba(255,255,255,0.1),
+        rgba(200,200,255,0.15),
+        rgba(255,255,255,0.05)
+    );
+    border-radius: 4px 4px 0 0;
+    box-shadow: 
+        inset -3px 0 8px rgba(255,255,255,0.1),
+        inset 3px 0 8px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Corcho de la botella */
+.botella-corcho {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 10px;
+    background: linear-gradient(145deg, #2C2C54, #40407a, #706fd3);
+    border-radius: 4px 4px 2px 2px;
+    box-shadow: 
+        0 -2px 10px rgba(0,0,0,0.3),
+        inset 0 2px 5px rgba(255,255,255,0.1);
+}
+
+.botella-corcho::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    height: 2px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 1px;
+}
+
+/* Etiqueta principal */
+.main-label {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 60px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4px;
+    font-size: 8px;
+    color: #1a1a2e;
+    font-weight: bold;
+    box-shadow: 
+        0 2px 8px rgba(0,0,0,0.2),
+        inset 0 1px 2px rgba(255,255,255,0.8);
+    border: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.brand-name {
+    font-size: 5px;
+    font-weight: 900;
+    color: #2C2C54;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+.vodka-text {
+    font-size: 4px;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.premium-text {
+    font-size: 3.5px;
+    color: #999;
+    margin-top: auto;
+}
+
+/* Bandera de rusia */
+.bandera-rusia {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    top: 65px;
+    border-radius: 8px;
+    box-shadow: 
+        0 8px 25px rgba(0,0,0,0.3),
+        inset 0 1px 3px rgba(255,255,255,0.2);
+    overflow: hidden;
+    transform: rotateY(-5deg) rotateX(2deg);
+    z-index: 2;
+    background: linear-gradient(180deg, 
+        #FFFFFF 0%, 
+        #FFFFFF 33.33%, 
+        #0039A6 33.33%, 
+        #0039A6 66.66%, 
+        #D52B1E 66.66%, 
+        #D52B1E 100%
+    );
+}

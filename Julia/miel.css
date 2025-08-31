@@ -1,0 +1,95 @@
+/* Tarro de miel en una mesa */
+.miel-container {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    z-index: 1;
+    transition: rotate 2s;
+}
+
+.miel-container:hover {
+    rotate: 360deg;
+}
+
+/* Tarro de miel */
+.jarra-miel {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translate(-50%);
+    width: 40px;
+    height: 70px;
+    z-index: 10;
+    box-shadow: 0 0 0 rgba(0,0,0,0.3);
+}
+
+/* Tapa del tarro */
+.jarra-tapa {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 10px;
+    background-color: rgb(205, 205, 205);
+    border-radius: 10px;
+}
+
+/* Cuerpo del tarro */
+.jarra-cuerpo {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, rgb(255, 165, 0), rgb(255, 215, 0), rgb(255, 140, 0));
+    border-radius: 15px 15px 25px 25px;
+    position: relative;
+}
+
+.etiqueta {
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 20px;
+    background: rgb(255, 248, 220);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    color: #8B4513;
+    font-weight: bold;
+}
+
+.etiqueta::after {
+    content: "MIEL\A PURA";
+    white-space: pre;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* Bandera españa */
+.bandera-espana {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    top: 150px;
+    border-radius: 8px;
+    box-shadow: 
+        0 8px 25px rgba(0,0,0,0.3),
+        inset 0 1px 3px rgba(255,255,255,0.2);
+    overflow: hidden;
+    transform: rotateY(-5deg) rotateX(2deg);
+    z-index: 2;
+    background: linear-gradient(180deg, 
+        #C60B1E 0%, 
+        #C60B1E 33.3%, 
+        #FFC400 33.3%, 
+        #FFC400 66.6%, 
+        #C60B1E 66.6%, 
+        #C60B1E 100%
+    );
+}
