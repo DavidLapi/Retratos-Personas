@@ -1,0 +1,235 @@
+/* Drogo */
+.drogo-container {
+    border: 1px solid black;
+    width: 102.5px;
+    height: 90px;
+    position: absolute;
+    top: 65px;
+    right: 45px;
+    z-index: 1;
+    background: linear-gradient(#5e5e5e 85%, rgb(0, 20, 0) 100%);
+    border: 1px solid #000;
+    border-radius: 46%;
+}
+
+.cat-left-ear-drogo {
+  position: absolute;
+  top: -14px;
+  left: -16px;
+  z-index: 1;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 10px;
+  transform: rotate(-45deg);
+  border-left: 17.5px solid transparent;
+  border-right: 17.5px solid transparent;
+  border-bottom: 35px solid #5e5e5e;
+}
+
+.cat-right-ear-drogo {
+  position: absolute;
+  top: -15px;
+  left: 83px;
+  z-index: 1;
+  transform: rotate(45deg);
+  border-top-left-radius: 90px;
+  border-top-right-radius: 10px;
+  border-left: 17.5px solid transparent;
+  border-right: 17.5px solid transparent;
+  border-bottom: 35px solid #5e5e5e;
+}
+
+.cat-left-inner-ear-drogo {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 21px solid #3b3b4f;
+}
+
+.cat-right-inner-ear-drogo {
+  position: absolute;
+  top: 10px;
+  left: -11px;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 21px solid #3b3b4f;
+}
+
+.cat-left-eye-drogo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 60%;
+  transform: rotate(25deg);
+  width: 15px;
+  height: 20px;
+  background-color: #000;
+}
+
+.cat-right-eye-drogo {
+  position: absolute;
+  top: 20px;
+  left: 64px;
+  border-radius: 60%;
+  transform: rotate(-25deg);
+  width: 15px;
+  height: 20px;
+  background-color: #000;
+}
+
+.cat-left-inner-eye-drogo {
+  position: absolute;
+  top: 4px;
+  left: 1px;
+  width: 5px;
+  height: 10px;
+  transform: rotate(10deg);
+  background-color: #fff;
+  border-radius: 60%;
+}
+
+.cat-right-inner-eye-drogo {
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  transform: rotate(-5deg);
+  width: 5px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 60%;
+}
+
+.cat-nose-drogo {
+  position: absolute;
+  top: 41px;
+  left: 44px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transform: rotate(180deg);
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  border-bottom: 10px solid #442c2c;
+}
+
+.cat-mouth-drogo div {
+  width: 20px;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 190%/190px 150px 0 0;
+  border-color: black transparent transparent transparent;
+}
+
+.cat-mouth-line-left-drogo {
+  position: absolute;
+  top: 8px;
+  left: 35px;
+  transform: rotate(170deg);
+}
+
+.cat-mouth-line-right-drogo {
+  position: absolute;
+  top: 8px;
+  left: 42px;
+  transform: rotate(165deg);
+}
+
+.cat-whiskers-left-drogo div {
+  width: 20px;
+  height: 0.5px;
+  background-color: #000;
+}
+
+.cat-whiskers-right-drogo div {
+  width: 20px;
+  height: 0.5px;
+  background-color: #000;
+}
+
+.cat-whisker-left-top-drogo {
+  position: absolute;
+  top: 43px;
+  left: 27px;
+  transform: rotate(10deg);
+}
+
+.cat-whisker-left-middle-drogo {
+  position: absolute;
+  top: 46px;
+  left: 27px;
+  transform: rotate(3deg);
+}
+
+.cat-whisker-left-bottom-drogo {
+  position: absolute;
+  top: 49px;
+  left: 27px;
+  transform: rotate(-3deg);
+}
+
+.cat-whisker-right-top-drogo {
+  position: absolute;
+  top: 43px;
+  left: 57px;
+  transform: rotate(-10deg);
+}
+
+.cat-whisker-right-middle-drogo {
+  position: absolute;
+  top: 46px;
+  left: 57px;
+  transform: rotate(-3deg);
+}
+
+.cat-whisker-right-bottom-drogo {
+  position: absolute;
+  top: 49px;
+  left: 57px;
+  transform: rotate(3deg);
+}
+
+.crescent-moon-drogo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: -33px;
+    left: 29px;
+    background: linear-gradient(135deg, #fff5e6, #ffffcc, #fff8dc);
+    box-shadow: 
+        inset -20px -10px 30px rgba(255, 215, 0, 0.3),
+        0 0 50px rgba(255, 255, 255, 0.8),
+        0 0 100px rgba(255, 215, 0, 0.4);
+}
+
+.moon-mask-drogo {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #1a0033, #000011);
+    top: -29px;
+    left: 37px;
+}
+
+/* Símbolo de Sailor Moon */
+.sailor-symbol-drogo {
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffd700;
+    font-size: 12px;
+    text-shadow: 0 0 15px #ffd700;
+    font-family: serif;
+    letter-spacing: 2px;
+}
