@@ -16,7 +16,7 @@ h1 {
 /* Volver */
 .volver {
     position: relative;
-    bottom: 40px;
+    bottom: 10px;
     left: 50%;
     right: 50%;
     transform: translate(-50%);
