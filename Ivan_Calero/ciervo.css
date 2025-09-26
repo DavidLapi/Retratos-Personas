@@ -3,7 +3,6 @@
     height: 100px;
     position: absolute;
     top: 75px;
-    left: 700px;
     z-index: 1;
     transition: rotate 2s;
 }
