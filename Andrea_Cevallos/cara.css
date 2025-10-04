@@ -1,0 +1,25 @@
+/* Persona */
+
+/* Cara */
+.head-container {
+    border: 1px solid black;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    position: relative;
+    top: 275px;
+    left: 50%;
+    transform: translate(-53%, -80%);
+}
+
+.head {
+    width: 280px;
+    height: 320px;
+    background: #8B6F47;
+    border-radius: 50% 50% 45% 45%;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
