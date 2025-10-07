@@ -15,7 +15,6 @@ h1 {
 
 /* Volver */
 .volver {
-    opacity: 0;
     position: relative;
     bottom: -30px;
     left: 50%;
@@ -45,5 +44,5 @@ h1 {
 
 .volver a:hover {
     text-decoration: underline;
-    color: rgb(20, 255, 125);
+    color: rgb(20, 25, 255);
 }
