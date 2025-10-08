@@ -1,0 +1,39 @@
+.earphones-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 130px;
+}
+
+.earphone {
+    width: 12px;
+    height: 40px;
+    background: white;
+    position: relative;
+}
+
+.earphone.left {
+    left: -100px;
+}
+
+.earphone.right {
+    right: -100px;
+}
+
+.connect {
+    width: 3px;
+    height: 210px;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.sound {
+    width: 12px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    bottom: 130px;
+}
+
