@@ -21,7 +21,7 @@
     background-color: rgb(173, 138, 89);
 }
 
-.cara:hover {
+.head:hover {
     box-shadow: 0 10px 30px rgb(255, 125, 0);
 }
 
@@ -85,4 +85,144 @@
     top: 7px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+/* Ojos contenedor */
+.eyes-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 75px;
+}
+
+/* Ojo */
+.eye {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.eye.left {
+    left: -12px;
+}
+
+.eye.right {
+    right: -20px;
+}
+
+.iris {
+    width: 30px;
+    height: 30px;
+    background: rgb(225, 166, 40);
+    border-radius: 50%;
+    position: relative;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pupil {
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+}
+
+.highlight {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
+
+/* Cejas */
+.eyebrow {
+    width: 50px;
+    height: 8px;
+    background: rgb(131, 41, 6);
+    border-radius: 50%;
+    position: absolute;
+    top: 55px;
+}
+
+.eyebrow.left {
+    left: 40px;
+    transform: rotate(-20deg);
+}
+
+.eyebrow.right {
+    right: 40px;
+    transform: rotate(20deg);
+}
+
+/* Nariz */
+.nose {
+    width: 30px;
+    height: 40px;
+    background: rgb(122, 92, 58);
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Gafas */
+.glasses {
+    position: absolute;
+    top: 66px;
+    left: 35px;
+    width: 210px;
+    height: 80px;
+}
+
+.lens {
+    width: 80px;
+    height: 75px;
+    border: 4px solid rgb(255, 200, 4);
+    border-radius: 45% 45% 50% 50%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    top: 0;
+}
+
+.lens.left {
+    left: -5px;
+}
+
+.lens.right {
+    right: -5px;
+}
+
+.bridge {
+    width: 71px;
+    height: 4px;
+    background: rgb(255, 200, 4);
+    position: absolute;
+    top: 30px;
+    left: 70px;
+}
+
+.temple {
+    width: 34px;
+    height: 4px;
+    background: rgb(255, 200, 4);
+    position: absolute;
+    top: 30px;
+}
+
+.temple.left {
+    left: -40px;
+    width: 42px;
+}
+
+.temple.right {
+    right: -31px;
 }
