@@ -8,26 +8,18 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.cara-container {
-    border: 3px solid black;
-    width: 75%;
-    height: 400px;
-    position: relative;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 /* Volver */
 .volver {
+    opacity: 0;
     position: relative;
     bottom: -100px;
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
     height: 40px;
-    border: 2px dashed rgb(20, 255, 125);
-    background-color: rgb(30, 125, 200);
+    border: 4px dashed rgb(83, 251, 203);
+    background-color: rgb(254, 159, 147);;
     transition: 
         width 1.5s, 
         height 1.5s, 
