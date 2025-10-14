@@ -1,0 +1,10 @@
+/* Contenedor cabeza */
+.cara-container {
+    border: 1px solid black;
+    width: 450px;
+    height: 400px;
+    position: relative;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
