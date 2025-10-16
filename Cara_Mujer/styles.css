@@ -8,6 +8,16 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+a {
+    text-decoration: none;
+    
+}
+
+.face {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 7px;
+    margin: 5px;
+}
 
 /* Volver */
 .volver {

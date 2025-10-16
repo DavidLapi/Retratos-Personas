@@ -19,8 +19,4 @@ body {
     height: 40px;
     border: 4px dashed rgb(83, 251, 203);
     background-color: rgb(254, 159, 147);;
-    transition: 
-        width 1.5s, 
-        height 1.5s, 
-        rotate 1.5s;
 }
